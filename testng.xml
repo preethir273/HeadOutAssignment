@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="url" value="https://www.londontheatredirect.com/" />
+	<parameter name="tourName" value="Mamma Mia!" />
+	<parameter name="cardHolderName" value="John Doe" />
+	<parameter name="email" value="john@doe.com" />
+	<parameter name="telephone" value="03337008800" />
+	<parameter name="cardNumber" value="4242424242424242" />
+	<parameter name="expiryDate" value="0322" />
+	<parameter name="cvv" value="100" />
+	
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="test.BookMammaMiaTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
